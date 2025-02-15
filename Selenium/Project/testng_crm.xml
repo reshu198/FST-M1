@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CRMProjectSuite" thread-count="4" parallel="classes">
+<!--	<groups>  Groups Control 
+		<run>
+			<include name="HeaderTests" />
+		</run>-->
+<!--	</groups>-->
+	<parameter name="username" value="admin" />
+	<parameter name="password" value="pa$$w0rd" />
+	<test name="CRMActivities"> <!-- Test Classes -->
+		<classes>
+			<class name="CRM_Activities.CRM_Activity1" />
+			<class name="CRM_Activities.CRM_Activity2" />
+			<class name="CRM_Activities.CRM_Activity3" />
+			<class name="CRM_Activities.CRM_Activity4" />
+			<class name="CRM_Activities.CRM_Activity5" />
+			<class name="CRM_Activities.CRM_Activity6" />
+			<class name="CRM_Activities.CRM_Activity7" />
+			<class name="CRM_Activities.CRM_Activity8" />
+			<class name="CRM_Activities.CRM_Activity9" />
+		</classes>
+	</test>
+	
+</suite>
