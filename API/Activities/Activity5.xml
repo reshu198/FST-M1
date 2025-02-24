@@ -51,7 +51,7 @@
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Excel">
             <con:configuration>
-              <file>C:/Users/RASHMISINGH/Desktop/FullStackTester/FST_API/activity6.xlsx</file>
+              <file>C:/Users/RASHMISINGH/Desktop/FullStackTester/FST_API/activity5.xlsx</file>
               <worksheet/>
               <cell>A2</cell>
               <ignoreEmpty>false</ignoreEmpty>
@@ -60,7 +60,7 @@
           </con:dataSource>
           <con:shared>true</con:shared>
           <con:restartShared>true</con:restartShared>
-          <con:property>IP Address</con:property>
+          <con:property>address</con:property>
           <con:restartOnRun>true</con:restartOnRun>
           <con:stopDatasourceExhausted>false</con:stopDatasourceExhausted>
         </con:config>
