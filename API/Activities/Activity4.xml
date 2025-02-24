@@ -3,7 +3,7 @@
   <con:settings/>
   <con:interface xsi:type="con:RestService" id="0877a4c5-9cba-4cb5-9574-f01d3445c4eb" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://ipwhois.app" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings id="68129a20-5f84-4b8e-bebf-099e20183e10"/>
-    <con:definitionCache/>
+    <con:definitionCache type="TEXT" rootPart=""/>
     <con:endpoints>
       <con:endpoint>http://ipwhois.app</con:endpoint>
     </con:endpoints>
@@ -79,6 +79,15 @@
               <con:settings/>
               <con:configuration>
                 <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="JsonPath Match" id="50b0b12e-e1cf-47cd-9dd0-4cd0842cfd10" name="JSONPath Match">
+              <con:configuration>
+                <path>$['country']</path>
+                <content>${Get Request#Response#$['country']}</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
               </con:configuration>
             </con:assertion>
             <con:credentials>
